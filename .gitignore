@@ -1,0 +1,39 @@
+# Secrets and browser sessions
+.env
+.env.*
+!.env.example
+*session*.json
+*state*.json
+*cookie*.json
+
+# Local data and generated files
+data/
+output/
+exports/
+*.xlsx
+*.csv
+*.tsv
+*.jsonl
+raw_authorized_results.json
+rejected_phone_leads.json
+browser-profile*.yaml
+!examples/browser-profile*.yaml
+private-run/
+*.log
+*.pid
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,27 @@
+# Copy this file into a private task workspace. An Agent that can see the task page
+# can fill in the URL and selectors after the task owner describes the query and
+# completes browser login. It intentionally contains no real website URL or selectors.
+browser:
+  start_url: https://example.com/authorized-results
+  item_selector: article.company-card
+  fields:
+    name: .company-name
+    credit_code: .credit-code
+    entity_type: .entity-type
+    established_on: .established-on
+    status: .status
+    city: .city
+    district: .district
+    address: .address
+    representative: .representative
+    phones: .phone
+    business_scope: .business-scope
+    categories: .category
+    source_id: .source-id
+  risk:
+    self: .self-risk-count
+    related: .related-risk-count
+    history: .history-risk-count
+  next_selector: a.next-page
+  max_pages: 3
+  delay_seconds: 2

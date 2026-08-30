@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="680" viewBox="0 0 1440 680" role="img" aria-labelledby="title desc">
+  <title id="title">会员与官方 API 的成本换算示例</title>
+  <desc id="desc">按一次查询零点二元和一次详情零点二五元计算，单组 API 成本为零点四五元。假设第三方会员价格五十元，临界点约为一百一十一组查询和详情。</desc>
+  <defs>
+    <linearGradient id="page" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eff7ff"/><stop offset="1" stop-color="#f4fbf8"/></linearGradient>
+    <linearGradient id="api" x1="0" x2="1"><stop stop-color="#4f8df7"/><stop offset="1" stop-color="#6e6dde"/></linearGradient>
+    <linearGradient id="member" x1="0" x2="1"><stop stop-color="#f3a94b"/><stop offset="1" stop-color="#ed7c63"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#14324d" flood-opacity=".1"/></filter>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 2.5px; fill: #30718c; }
+      .title { font-size: 38px; font-weight: 700; fill: #102a43; }
+      .sub { font-size: 16px; fill: #60778e; }
+      .card-label { font-size: 14px; font-weight: 700; letter-spacing: 1.4px; fill: #6c8297; }
+      .card-value { font-size: 34px; font-weight: 700; fill: #102a43; }
+      .card-copy { font-size: 14px; fill: #60778e; }
+      .axis { font-size: 14px; fill: #60778e; }
+      .row-label { font-size: 16px; font-weight: 700; fill: #183952; }
+      .value { font-size: 14px; font-weight: 700; fill: #fff; }
+      .note { font-size: 13px; fill: #60778e; }
+    </style>
+  </defs>
+  <rect width="1440" height="680" fill="url(#page)"/>
+  <rect x="44" y="38" width="1352" height="604" rx="32" fill="#fff" filter="url(#shadow)"/>
+  <text x="96" y="98" class="sans eyebrow">COST MODEL EXAMPLE</text>
+  <text x="94" y="149" class="sans title">会员页面与官方 API：成本差异示例</text>
+  <text x="96" y="182" class="sans sub">这张图只比较取数成本，不属于本地获客工作流的执行步骤。</text>
+  <g transform="translate(96 224)">
+    <rect width="278" height="116" rx="20" fill="#eff5ff"/>
+    <text x="24" y="31" class="sans card-label">官方 API / 每组</text>
+    <text x="24" y="76" class="sans card-value">¥0.45</text>
+    <text x="24" y="100" class="sans card-copy">¥0.20 查询 + ¥0.25 详情</text>
+  </g>
+  <g transform="translate(397 224)">
+    <rect width="278" height="116" rx="20" fill="#fff4e8"/>
+    <text x="24" y="31" class="sans card-label">会员 / 期（示例）</text>
+    <text x="24" y="76" class="sans card-value">¥50</text>
+    <text x="24" y="100" class="sans card-copy">按“几十元”第三方报价假设</text>
+  </g>
+  <g transform="translate(698 224)">
+    <rect width="278" height="116" rx="20" fill="#e9f9f2"/>
+    <text x="24" y="31" class="sans card-label">金额临界点</text>
+    <text x="24" y="76" class="sans card-value">≈ 111 组</text>
+    <text x="24" y="100" class="sans card-copy">¥50 ÷ ¥0.45 = 111.1</text>
+  </g>
+  <g transform="translate(999 224)">
+    <rect width="300" height="116" rx="20" fill="#f1efff"/>
+    <text x="24" y="31" class="sans card-label">已有会员</text>
+    <text x="24" y="76" class="sans card-value">¥0 增量</text>
+    <text x="24" y="100" class="sans card-copy">不含人工时间与权益限制</text>
+  </g>
+  <line x1="96" y1="392" x2="1299" y2="392" stroke="#dbe7f0" stroke-width="1.5"/>
+  <text x="96" y="423" class="sans axis">任务量</text>
+  <text x="324" y="423" class="sans axis">官方 API 成本</text>
+  <text x="764" y="423" class="sans axis">会员示例成本</text>
+  <text x="1052" y="423" class="sans axis">金额差</text>
+  <g transform="translate(96 450)">
+    <text x="0" y="20" class="sans row-label">100 组</text>
+    <rect x="150" y="0" width="90" height="30" rx="15" fill="url(#api)"/><text x="195" y="20" text-anchor="middle" class="sans value">¥45</text>
+    <rect x="620" y="0" width="100" height="30" rx="15" fill="url(#member)"/><text x="670" y="20" text-anchor="middle" class="sans value">¥50</text>
+    <text x="956" y="20" class="sans note">API 少 ¥5</text>
+  </g>
+  <g transform="translate(96 500)">
+    <text x="0" y="20" class="sans row-label">500 组</text>
+    <rect x="150" y="0" width="260" height="30" rx="15" fill="url(#api)"/><text x="280" y="20" text-anchor="middle" class="sans value">¥225</text>
+    <rect x="620" y="0" width="100" height="30" rx="15" fill="url(#member)"/><text x="670" y="20" text-anchor="middle" class="sans value">¥50</text>
+    <text x="956" y="20" class="sans note">会员少 ¥175</text>
+  </g>
+  <g transform="translate(96 550)">
+    <text x="0" y="20" class="sans row-label">1000 组</text>
+    <rect x="150" y="0" width="430" height="30" rx="15" fill="url(#api)"/><text x="365" y="20" text-anchor="middle" class="sans value">¥450</text>
+    <rect x="620" y="0" width="100" height="30" rx="15" fill="url(#member)"/><text x="670" y="20" text-anchor="middle" class="sans value">¥50</text>
+    <text x="956" y="20" class="sans note">会员少 ¥400</text>
+  </g>
+  <text x="96" y="615" class="sans note">说明：API 单价取自当前官方页面；会员 ¥50 仅用于“几十元第三方报价”的换算示例，不代表官方会员价格或权益。</text>
+</svg>

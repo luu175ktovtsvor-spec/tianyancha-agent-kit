@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tianyancha-agent-kit"
+version = "0.1.0"
+description = "An Agent acquisition workflow for Tianyancha company data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Community contributors"}]
+keywords = ["agent", "company-research", "tianyancha", "playwright", "lead-generation", "phone-leads"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+  "PyYAML>=6.0",
+  "openpyxl>=3.1",
+]
+
+[project.urls]
+Repository = "https://github.com/luu175ktovtsvor-spec/tianyancha-agent-kit"
+Issues = "https://github.com/luu175ktovtsvor-spec/tianyancha-agent-kit/issues"
+
+[project.optional-dependencies]
+browser = ["playwright>=1.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+tyc-agent = "tyc_agent.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]

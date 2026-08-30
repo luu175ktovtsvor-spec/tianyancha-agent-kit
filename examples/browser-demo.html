@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser Automation Demo</title>
+  <style>
+    body { margin: 0; background: #f3f7fb; color: #12304a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; }
+    main { width: min(860px, calc(100% - 48px)); margin: 48px auto; }
+    h1 { margin-bottom: 8px; } p { color: #60778e; }
+    .company-card { margin-top: 16px; padding: 20px; border: 1px solid #d8e5ef; border-radius: 16px; background: #fff; box-shadow: 0 6px 18px rgba(18,48,74,.06); }
+    .company-name { display: block; font-size: 20px; font-weight: 700; } .meta { display: inline-block; margin: 10px 12px 0 0; color: #58728a; }
+    .phone { display: inline-block; margin: 10px 8px 0 0; padding: 4px 8px; border-radius: 12px; background: #e8f7f4; color: #176a61; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>虚构企业结果页</h1>
+    <p>仅用于演示 Playwright 选择器和电话筛选流程，不包含真实企业或真实电话。</p>
+
+    <article class="company-card"><span class="company-name">示例目标行业个体经营部</span><span class="credit-code meta">DEMO-BROWSER-001</span><span class="entity-type meta">个体工商户</span><span class="established-on meta">2025年01月15日</span><span class="status meta">存续</span><span class="city meta">示例市</span><span class="district meta">示例区</span><span class="address meta">示例地址 1 号</span><span class="representative meta">示例负责人</span><span class="business-scope meta">目标行业服务</span><span class="category meta">示例服务业</span><span class="source-id meta">browser-demo-001</span><span class="self-risk-count meta">自身风险 0</span><span class="related-risk-count meta">关联风险 0</span><span class="history-risk-count meta">历史风险 0</span><span class="phone">000-0000-0000</span></article>
+    <article class="company-card"><span class="company-name">示例目标行业服务有限公司</span><span class="credit-code meta">DEMO-BROWSER-002</span><span class="entity-type meta">有限责任公司</span><span class="established-on meta">2025年01月20日</span><span class="status meta">存续</span><span class="city meta">示例市</span><span class="district meta">示例区</span><span class="address meta">示例地址 2 号</span><span class="representative meta">示例负责人</span><span class="business-scope meta">目标行业服务</span><span class="category meta">示例服务业</span><span class="source-id meta">browser-demo-002</span><span class="self-risk-count meta">自身风险 0</span><span class="related-risk-count meta">关联风险 0</span><span class="history-risk-count meta">历史风险 0</span><span class="phone">000-0000-0001</span><span class="phone">000-0000-0011</span></article>
+    <article class="company-card"><span class="company-name">示例其他主体</span><span class="credit-code meta">DEMO-BROWSER-003</span><span class="entity-type meta">其他组织</span><span class="established-on meta">2025年01月20日</span><span class="status meta">存续</span><span class="city meta">示例市</span><span class="district meta">示例区</span><span class="address meta">示例地址 3 号</span><span class="representative meta">示例负责人</span><span class="business-scope meta">目标行业服务</span><span class="category meta">示例服务业</span><span class="source-id meta">browser-demo-003</span><span class="self-risk-count meta">自身风险 0</span><span class="related-risk-count meta">关联风险 0</span><span class="history-risk-count meta">历史风险 0</span><span class="phone">000-0000-0002</span></article>
+    <article class="company-card"><span class="company-name">示例无电话企业有限公司</span><span class="credit-code meta">DEMO-BROWSER-004</span><span class="entity-type meta">有限责任公司</span><span class="established-on meta">2025年01月20日</span><span class="status meta">存续</span><span class="city meta">示例市</span><span class="district meta">示例区</span><span class="address meta">示例地址 4 号</span><span class="representative meta">示例负责人</span><span class="business-scope meta">目标行业服务</span><span class="category meta">示例服务业</span><span class="source-id meta">browser-demo-004</span><span class="self-risk-count meta">自身风险 0</span><span class="related-risk-count meta">关联风险 0</span><span class="history-risk-count meta">历史风险 0</span></article>
+    <article class="company-card"><span class="company-name">示例非目标行业企业有限公司</span><span class="credit-code meta">DEMO-BROWSER-005</span><span class="entity-type meta">有限责任公司</span><span class="established-on meta">2025年01月20日</span><span class="status meta">存续</span><span class="city meta">示例市</span><span class="district meta">示例区</span><span class="address meta">示例地址 5 号</span><span class="representative meta">示例负责人</span><span class="business-scope meta">非目标行业服务</span><span class="category meta">示例服务业</span><span class="source-id meta">browser-demo-005</span><span class="self-risk-count meta">自身风险 0</span><span class="related-risk-count meta">关联风险 0</span><span class="history-risk-count meta">历史风险 0</span><span class="phone">000-0000-0003</span></article>
+  </main>
+</body>
+</html>

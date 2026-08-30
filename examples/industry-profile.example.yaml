@@ -1,0 +1,51 @@
+# Public template for a company phone-lead job. All values are placeholders:
+# replace them only in a private profile outside the public repository.
+profile:
+  name: generic-company-phone-leads
+
+  # Records must contain at least one positive term in name, business scope,
+  # or categories. Negative terms take precedence.
+  positive_terms:
+    - 目标行业服务
+  negative_terms:
+    - 非目标行业
+  required_terms: []
+
+  # This broad rule applies to the generic `run` command. The phone-leads
+  # command routes records with the entity_classes below.
+  entity_mode: any
+  individual_markers: [个体工商户]
+  company_markers: [公司]
+  entity_classes:
+    - key: individual_business
+      label: 个体工商户
+      markers: [个体工商户]
+    - key: enterprise
+      label: 企业
+      markers: [公司, 企业, 合伙企业, 个人独资企业, 分公司]
+    - key: other
+      label: 其他主体
+      fallback: true
+
+  # Optional qualification rules. Keep empty in a public template; define a
+  # real task's date/status/risk conditions in a private profile.
+  established_on_or_after: ""
+  allowed_statuses: []
+  max_risk: {}
+  require_phone: false
+
+  location:
+    # Empty lists/maps mean no location restriction.
+    allowed_cities: []
+    allowed_districts: {}
+
+  # This is the delivery target: any record with at least one source-returned
+  # phone enters the selected entity-class output. Two phones are not required.
+  phone_leads:
+    min_phone_count: 1
+    target_entity_classes: [individual_business, enterprise]
+
+  privacy:
+    # Phone leads are private by default. For an external summary, redact
+    # fields before sharing it.
+    redact_fields: []

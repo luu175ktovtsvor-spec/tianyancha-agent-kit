@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="700" viewBox="0 0 1440 700" role="img" aria-labelledby="title desc">
+  <title id="title">企业获客线索的筛选路径</title>
+  <desc id="desc">获客线索经过整理、行业范围、质量条件、电话条件与交付审计五层筛选；行业要求由任务负责人告诉 Agent，未通过的记录保留淘汰原因。</desc>
+  <defs>
+    <linearGradient id="canvas" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eff7ff"/><stop offset=".54" stop-color="#fbfdff"/><stop offset="1" stop-color="#effaf7"/></linearGradient>
+    <linearGradient id="line" x1="0" x2="1"><stop stop-color="#f0aa4a"/><stop offset=".45" stop-color="#54b9c5"/><stop offset="1" stop-color="#4d86ef"/></linearGradient>
+    <linearGradient id="outcome" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#173c62"/><stop offset="1" stop-color="#0c7a7d"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-25%" width="140%" height="150%"><feDropShadow dx="0" dy="13" stdDeviation="15" flood-color="#18344e" flood-opacity=".11"/></filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7.2" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#5695dc"/></marker>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+      .eyebrow { font-size: 13px; letter-spacing: 2.4px; font-weight: 700; fill: #38728b; }
+      .title { font-size: 38px; font-weight: 700; fill: #102a43; }
+      .sub { font-size: 16px; fill: #60778e; }
+      .step { font-size: 13px; letter-spacing: 1.5px; font-weight: 700; fill: #6b8599; }
+      .card-title { font-size: 21px; font-weight: 700; fill: #102a43; }
+      .card-copy { font-size: 14px; fill: #49677e; }
+      .tiny { font-size: 13px; fill: #60778e; }
+      .chip { font-size: 13px; font-weight: 700; fill: #24516a; }
+      .out-title { font-size: 20px; font-weight: 700; fill: #fff; }
+      .out-copy { font-size: 13px; fill: #d7f7f5; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="700" fill="url(#canvas)"/>
+  <circle cx="1313" cy="96" r="155" fill="#c5ebdf" opacity=".38"/>
+  <circle cx="147" cy="650" r="140" fill="#cce0ff" opacity=".38"/>
+  <rect x="44" y="38" width="1352" height="624" rx="34" fill="#fff" opacity=".97" filter="url(#shadow)"/>
+
+  <text x="96" y="99" class="sans eyebrow">FILTERING LOGIC</text>
+  <text x="94" y="151" class="sans title">行业规则不同，但每条获客线索都要走完这 5 关</text>
+  <text x="96" y="184" class="sans sub">具体标准由任务负责人告诉 Agent；未通过的记录会保留首个淘汰原因。</text>
+
+  <path d="M190 389H1255" fill="none" stroke="url(#line)" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+
+  <g transform="translate(96 260)">
+    <rect width="205" height="214" rx="23" fill="#fff7e9" stroke="#f6d198" stroke-width="1.5"/>
+    <circle cx="34" cy="34" r="18" fill="#efa844"/><text x="34" y="39" text-anchor="middle" class="sans chip" fill="#fff">1</text>
+    <text x="64" y="39" class="sans step">先整理</text>
+    <text x="24" y="87" class="sans card-title">字段统一</text>
+    <text x="24" y="117" class="sans card-copy">名称、主体、电话、</text>
+    <text x="24" y="138" class="sans card-copy">日期、地区与风险</text>
+    <rect x="24" y="164" width="126" height="28" rx="14" fill="#fff0d9"/>
+    <text x="39" y="183" class="sans chip">主体稳定去重</text>
+  </g>
+
+  <g transform="translate(325 260)">
+    <rect width="205" height="214" rx="23" fill="#eff9f6" stroke="#bbe3d9" stroke-width="1.5"/>
+    <circle cx="34" cy="34" r="18" fill="#49b7a3"/><text x="34" y="39" text-anchor="middle" class="sans chip" fill="#fff">2</text>
+    <text x="64" y="39" class="sans step">定行业范围</text>
+    <text x="24" y="87" class="sans card-title">要什么，不要什么</text>
+    <text x="24" y="117" class="sans card-copy">保留词、排除词、</text>
+    <text x="24" y="138" class="sans card-copy">必含词</text>
+    <rect x="24" y="164" width="139" height="28" rx="14" fill="#dcf4eb"/>
+    <text x="39" y="183" class="sans chip">按行业改配置</text>
+  </g>
+
+  <g transform="translate(554 260)">
+    <rect width="205" height="214" rx="23" fill="#eef5ff" stroke="#bdd8f5" stroke-width="1.5"/>
+    <circle cx="34" cy="34" r="18" fill="#5489e9"/><text x="34" y="39" text-anchor="middle" class="sans chip" fill="#fff">3</text>
+    <text x="64" y="39" class="sans step">看质量条件</text>
+    <text x="24" y="87" class="sans card-title">是否符合要求</text>
+    <text x="24" y="117" class="sans card-copy">主体、日期、状态</text>
+    <text x="24" y="138" class="sans card-copy">与风险</text>
+    <rect x="24" y="164" width="139" height="28" rx="14" fill="#ddeaff"/>
+    <text x="39" y="183" class="sans chip">按任务设标准</text>
+  </g>
+
+  <g transform="translate(783 260)">
+    <rect width="205" height="214" rx="23" fill="#f5f0ff" stroke="#d5c5f3" stroke-width="1.5"/>
+    <circle cx="34" cy="34" r="18" fill="#876bd3"/><text x="34" y="39" text-anchor="middle" class="sans chip" fill="#fff">4</text>
+    <text x="64" y="39" class="sans step">电话与地区</text>
+    <text x="24" y="87" class="sans card-title">至少 1 个电话</text>
+    <text x="24" y="117" class="sans card-copy">来源返回电话；地区</text>
+    <text x="24" y="138" class="sans card-copy">符合任务范围</text>
+    <rect x="24" y="164" width="144" height="28" rx="14" fill="#ebe1ff"/>
+    <text x="39" y="183" class="sans chip">多个号码都保留</text>
+  </g>
+
+  <g transform="translate(1012 260)">
+    <rect width="320" height="214" rx="23" fill="url(#outcome)"/>
+    <circle cx="34" cy="34" r="18" fill="#5abdc1"/><text x="34" y="39" text-anchor="middle" class="sans chip" fill="#fff">5</text>
+    <text x="64" y="39" class="sans step" fill="#c8eef0">交付与复核</text>
+    <text x="24" y="87" class="sans out-title">获客线索，不是黑箱</text>
+    <text x="24" y="116" class="sans out-copy">通过全部必要条件 → 获客主表、主体分表</text>
+    <text x="24" y="139" class="sans out-copy">未通过 → 淘汰原因；可导入飞书</text>
+    <rect x="24" y="164" width="177" height="28" rx="14" fill="#ffffff" fill-opacity=".13"/>
+    <text x="39" y="183" class="sans out-copy">每条结果都能回看</text>
+  </g>
+
+  <path d="M96 540H1340" stroke="#dfebf3" stroke-width="1.5"/>
+  <rect x="96" y="568" width="379" height="43" rx="21.5" fill="#fff7e9"/>
+  <text x="117" y="595" class="sans chip">示例只说明写法，不代表任何行业标准</text>
+  <path d="M500 589H596" stroke="#d5e3ed" stroke-width="1.5" stroke-dasharray="4 5" marker-end="url(#arrow)"/>
+  <text x="620" y="595" class="sans tiny">告诉 Agent 具体条件，它会在任务工作区改配置并执行。</text>
+</svg>

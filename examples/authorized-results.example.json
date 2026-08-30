@@ -1,0 +1,73 @@
+[
+  {
+    "id": "demo-001",
+    "name": "示例目标行业个体经营部",
+    "creditCode": "DEMO-CREDIT-001",
+    "orgType": "个体工商户",
+    "establishmentTime": "20250115",
+    "regStatus": "存续",
+    "provinceName": "示例省",
+    "cityName": "示例市",
+    "districtName": "示例区",
+    "regLocation": "示例地址 1 号",
+    "legalPersonName": "示例负责人",
+    "phoneList": ["000-0000-0000"],
+    "businessScope": "目标行业服务",
+    "categoryNameLv1": "示例服务业",
+    "selfRiskCount": 0,
+    "relatedRiskCount": 0,
+    "historyRiskCount": 0
+  },
+  {
+    "id": "demo-002",
+    "name": "示例目标行业服务有限公司",
+    "creditCode": "DEMO-CREDIT-002",
+    "orgType": "有限责任公司",
+    "establishmentTime": "20250120",
+    "regStatus": "存续",
+    "businessScope": "目标行业服务",
+    "phoneList": ["000-0000-0001", "000-0000-0011"],
+    "selfRiskCount": 0,
+    "relatedRiskCount": 0,
+    "historyRiskCount": 0
+  },
+  {
+    "id": "demo-003",
+    "name": "示例其他主体",
+    "creditCode": "DEMO-CREDIT-003",
+    "orgType": "其他组织",
+    "establishmentTime": "20250120",
+    "regStatus": "存续",
+    "businessScope": "目标行业服务",
+    "phoneList": ["000-0000-0002"],
+    "selfRiskCount": 0,
+    "relatedRiskCount": 0,
+    "historyRiskCount": 0
+  },
+  {
+    "id": "demo-004",
+    "name": "示例无电话企业有限公司",
+    "creditCode": "DEMO-CREDIT-004",
+    "orgType": "有限责任公司",
+    "establishmentTime": "20250120",
+    "regStatus": "存续",
+    "businessScope": "目标行业服务",
+    "phoneList": [],
+    "selfRiskCount": 0,
+    "relatedRiskCount": 0,
+    "historyRiskCount": 0
+  },
+  {
+    "id": "demo-005",
+    "name": "示例非目标行业企业有限公司",
+    "creditCode": "DEMO-CREDIT-005",
+    "orgType": "有限责任公司",
+    "establishmentTime": "20250120",
+    "regStatus": "存续",
+    "businessScope": "非目标行业服务",
+    "phoneList": ["000-0000-0003"],
+    "selfRiskCount": 0,
+    "relatedRiskCount": 0,
+    "historyRiskCount": 0
+  }
+]
